@@ -63,7 +63,7 @@ void adjust(void)
 	">=" 					{ cout << "GE" << endl; adjust(); return GE; }
 	"&"  					{ cout << "AND" << endl; adjust(); return AND; }
 	"|"  					{ cout << "OR" << endl; adjust(); return OR; }
-	"=" 					{ cout << "ASSIGN" << endl; adjust(); return ASSIGN;}
+	"=" 					{ cout << "ASSIGN" << endl; adjust(); return ASSIGN; }
 	/* key word */
 	if						{ cout << "IF" << endl; adjust(); return IF; }
 	else					{ cout << "ELSE" << endl; adjust(); return ELSE; }

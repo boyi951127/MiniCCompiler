@@ -165,10 +165,14 @@
   <ItemGroup>
     <ClInclude Include="errormsg.h" />
     <ClInclude Include="define.h" />
+    <ClInclude Include="symbol.h" />
+    <ClInclude Include="table.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="errormsg.cpp" />
+    <ClCompile Include="symbol.cpp" />
+    <ClCompile Include="table.cpp" />
     <ClCompile Include="tokens.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>

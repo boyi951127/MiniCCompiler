@@ -35,6 +35,12 @@
     <ClInclude Include="define.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="symbol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="table.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tokens.cpp">
@@ -44,6 +50,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="symbol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="table.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
