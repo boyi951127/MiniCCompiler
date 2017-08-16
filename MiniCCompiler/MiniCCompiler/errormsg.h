@@ -1,7 +1,5 @@
 #pragma once
 #include <string>
-#define TRUE 1
-#define FALSE 0
 using namespace std;
 
 extern int EM_tokPos;

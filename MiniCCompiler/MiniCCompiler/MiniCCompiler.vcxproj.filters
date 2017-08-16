@@ -24,6 +24,9 @@
     <CustomBuild Include="tokens.lex">
       <Filter>Lex&amp;Parser Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="parser.y">
+      <Filter>Lex&amp;Parser Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="errormsg.h">
@@ -39,6 +42,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="table.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="absyn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="parse.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -58,10 +67,11 @@
     <ClCompile Include="table.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="parser.y">
-      <Filter>Lex&amp;Parser Files</Filter>
-    </None>
+    <ClCompile Include="absyn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

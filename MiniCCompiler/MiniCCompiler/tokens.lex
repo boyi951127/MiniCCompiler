@@ -9,7 +9,7 @@ Date: 2017Äê8ÔÂ13ÈÕ
 #pragma warning (disable: 4996)
 #include <iostream>
 #include <string>
-//#include "util.h"
+#include "util.h"
 #include "define.h"
 #include "errormsg.h"
 
@@ -17,7 +17,7 @@ using namespace std;
 
 int charPos = 1;
 string tran = "";
-extern "C" int yywrap(void)
+int yywrap(void)
 {
 	charPos = 1;
 	string tran = "";
@@ -69,6 +69,7 @@ void adjust(void)
 	else					{ cout << "ELSE" << endl; adjust(); return ELSE; }
 	for						{ cout << "FOR" << endl; adjust(); return FOR; }
 	while					{ cout << "WHILE" << endl; adjust(); return WHILE; }
+	break					{ cout << "BREAK" << endl; adjust(); return BREAK;}
 	int						{ cout << "INT" << endl; adjust(); return INT; }
 	string					{ cout << "STRING" << endl; adjust(); return STRING; }
 	printf					{ cout << "PRINTF" << endl; adjust(); return PRINTF; }

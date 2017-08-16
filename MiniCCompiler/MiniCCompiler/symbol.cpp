@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "symbol.h"
+#include "table.h"
 #include "util.h"
 
 using namespace std;
@@ -82,7 +83,7 @@ void S_endScope(S_table t)
 {
 	S_symbol s;
 	do {
-		s = TAB_pop(t);
+		s = (S_symbol)TAB_pop(t);
 	} while (s != &marksym);
 }
 

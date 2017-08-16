@@ -33,4 +33,5 @@
 # define SCANF 288
 # define INTNUM 289
 # define STRINGVAL 290
+# define BREAK 291
 
